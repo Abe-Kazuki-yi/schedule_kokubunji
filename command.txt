@@ -5,6 +5,8 @@ docker pull sbtscala/scala-sbt:eclipse-temurin-jammy-17.0.10_7_1.9.9_2.13.12
 以下のコマンドでbackend, frontend, dbを全て起動
 docker compose up --build -d
 
+以下のコマンドでdockerを停止
+docker compose down
 
 以下のコマンドで起動しているdockerを確認できる
 (-aのオプションは起動が完了したものも確認できる,付けなくても良い)
