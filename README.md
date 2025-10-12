@@ -1,23 +1,3 @@
 # schedule_kokubunji
 
 #my name is Kazuki_Abe
-
-以下のコマンドを入力した
-docker pull sbtscala/scala-sbt:eclipse-temurin-jammy-17.0.10_7_1.9.9_2.13.12
-
-=============================================
-以下のコマンドでbackend, frontend, dbを全て起動
-docker compose up --build -d
-
-
-以下のコマンドで起動しているdockerを確認できる
-(-aのオプションは起動が完了したものも確認できる,付けなくても良い)
-docker ps -a
-
-
-以下のコマンドで各要素のコマンドラインがみれる
-これはバックエンドのログ
-(-fのオプションは起動が終了するまでログを追い続ける,付けなくても良い)
-docker logs -f schedule_kokubunji-backend-1
-(--tail 数字で末尾から特定の行数だけ表示)
-=============================================
