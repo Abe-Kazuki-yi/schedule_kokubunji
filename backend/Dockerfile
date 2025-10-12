@@ -1,5 +1,4 @@
-FROM hseeberger/scala-sbt:11.0.17_1.9.7_2.13.12
-
+FROM sbtscala/scala-sbt:eclipse-temurin-jammy-17.0.10_7_1.9.9_2.13.12
 WORKDIR /app
 
 COPY . .
