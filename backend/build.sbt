@@ -1,7 +1,11 @@
 
 // The simplest possible sbt build file is just one line:
 
-scalaVersion := "2.13.12"
+//初期のバージョンだと古いとのこと、変更する場合はDockerfileも変えること
+//scalaVersion := "2.13.12"
+
+scalaVersion := "2.13.17"
+enablePlugins(PlayScala)
 // That is, to create a valid sbt build, all you've got to do is define the
 // version of Scala you'd like your project to use.
 
@@ -17,6 +21,7 @@ name := "hello-world"
 organization := "ch.epfl.scala"
 version := "1.0"
 
+
 // Note, it's not required for you to define these three settings. These are
 // mostly only necessary if you intend to publish your library's binaries on a
 // place like Sonatype.
@@ -25,7 +30,11 @@ version := "1.0"
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
 
-libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0"
+//以下が構文解析のライブラリらしいが、PlayFrameworkのバージョンと合わないので一旦コメントアウト
+//libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0"
+
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test
+libraryDependencies += "com.typesafe.play" %% "play-guice" % "2.9.0"
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
@@ -64,14 +73,23 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 // Here's a quick glimpse of what a multi-project build looks like for this
 // build, with only one "subproject" defined, called `root`:
 
-// lazy val root = (project in file(".")).
-//   settings(
-//     inThisBuild(List(
-//       organization := "ch.epfl.scala",
-//       scalaVersion := "2.13.12"
-//     )),
-//     name := "hello-world"
-//   )
+lazy val root = (project in file("."))
+  .enablePlugins(PlayScala)
+  .settings(
+    name := "hello-world",
+    organization := "ch.epfl.scala",
+    version := "1.0",
+    scalaVersion := "2.13.12",
+    libraryDependencies ++= Seq(
+      guice,
+      "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test
+      //以下のコメントアウトを消すときに、一つ家上の行の末尾にコロンを足すこと
+      //"org.scala-lang.modules" %% "scala-parser-combinators" % "2.3.0"
+    )
+  )
+
+
+Compile / unmanagedSourceDirectories += baseDirectory.value / "src" / "main" / "scala"
 
 // To learn more about multi-project builds, head over to the official sbt
 // documentation at http://www.scala-sbt.org/documentation.html
