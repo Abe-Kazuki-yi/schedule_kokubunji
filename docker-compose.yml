@@ -3,12 +3,19 @@ services:
     build: ./backend
     ports:
       - "9000:9000"
+    volumes:
+      - ./backend:/app
+      - /app/target
+      - /app/project/target
+      - /app/project/project
     depends_on:
       - db
     environment:
       - DB_URL=jdbc:postgresql://db:5432/mydb
       - DB_USER=postgres
       - DB_PASSWORD=postgres
+    command: ["sbt", "-Dsbt.server.forcestart=true", "-Dsbt.watch.mode=polling", "~run"]
+
 
   frontend:
     build: ./frontend
@@ -16,6 +23,10 @@ services:
       - "5173:5173"
     depends_on:
       - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
 
   db:
     image: postgres:16

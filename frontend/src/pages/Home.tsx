@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div>
-      <h1>テストページです</h1>
+      <h1>Homeページです</h1>
       <button onClick={() => navigate("/getTest")}>getTestへ移動</button>
     </div>
   );
