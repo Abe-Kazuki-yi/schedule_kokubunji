@@ -7,6 +7,6 @@ import play.api.mvc._
 class TestController @Inject() (val controllerComponents: ControllerComponents) extends BaseController {
 
   def hello() = Action {
-    Ok("Hello, World!")
+    Ok("Hello, World! test")
   }
 }

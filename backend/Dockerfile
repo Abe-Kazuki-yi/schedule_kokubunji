@@ -12,4 +12,4 @@ RUN sbt compile
 #過去のバージョン
 #CMD ["sbt", "run"]
 
-CMD ["sbt", "~run"]
+CMD ["sbt", "-Dsbt.server.forcestart=true", "-Dsbt.watch.mode=polling", "~run"]
