@@ -5,16 +5,15 @@ services:
       - "9000:9000"
     volumes:
       - ./backend:/app
-      - /app/target
-      - /app/project/target
-      - /app/project/project
+      - ./backend/target:/app/target
+      - ./backend/project/target:/app/project/target
+      - ./backend/project/project:/app/project/project
     depends_on:
       - db
     environment:
       - DB_URL=jdbc:postgresql://db:5432/mydb
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-    command: ["sbt", "-Dsbt.server.forcestart=true", "-Dsbt.watch.mode=polling", "~run"]
 
 
   frontend:
