@@ -3,6 +3,11 @@ services:
     build: ./backend
     ports:
       - "9000:9000"
+    volumes:
+      - ./backend:/app
+      - ./backend/target:/app/target
+      - ./backend/project/target:/app/project/target
+      - ./backend/project/project:/app/project/project
     depends_on:
       - db
     environment:
@@ -10,12 +15,17 @@ services:
       - DB_USER=postgres
       - DB_PASSWORD=postgres
 
+
   frontend:
     build: ./frontend
     ports:
       - "5173:5173"
     depends_on:
       - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
 
   db:
     image: postgres:16
