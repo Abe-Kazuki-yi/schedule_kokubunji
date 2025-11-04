@@ -6,4 +6,5 @@ export const ENDPOINTS = {
     test: "/test",
     users: "/users",
     login: "/login",
+    lesson: "/lesson",
   };
