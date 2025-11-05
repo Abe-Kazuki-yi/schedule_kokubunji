@@ -7,4 +7,5 @@ export const ENDPOINTS = {
     users: "/users",
     login: "/login",
     lesson: "/lesson",
+    students: "/students", //テスト用
   };

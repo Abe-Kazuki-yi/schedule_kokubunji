@@ -8,7 +8,7 @@ const [response, setResponse] = useState<string>("");
 const apiFetch = (endpoint: string) => fetch(`${BASE_URL}${endpoint}`);
 
 const handleClick = async () => {
-  const res = await apiFetch(ENDPOINTS.test);
+  const res = await apiFetch(ENDPOINTS.students);
   const data = await res.text();
   setResponse(data);
 };
