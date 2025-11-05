@@ -1,1 +1,1 @@
-GET /test controllers.TestController.hello()
+GET /students controllers.TestController.getStudents()

@@ -9,6 +9,7 @@ docker compose up -d
 docker compose up --build -d
 
 以下のコマンドでdockerを停止
+(-vのオプションでdbが初期化される。sqlのinitは初回時のみなので変更した場合はこれを付ける)
 docker compose down
 
 以下のコマンドで起動しているdockerを確認できる
