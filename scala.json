@@ -1,0 +1,50 @@
+{
+	"File Header": {
+		"prefix": "file_header",
+		"body": [
+		  "/*",
+		  " * ===========================================================",
+		  " *  ファイル名 : ${TM_FILENAME}",
+		  " *  概要       : $1",
+		  " *  作成者     : Fury Kasukabe",
+		  " *  作成日     : ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+		  " * ===========================================================",
+		  " */",
+		  ""
+		],
+		"description": "ファイルヘッダーコメントを挿入します"
+	  },
+
+	"Class Header": {
+		"prefix": "class_header",
+		"body": [
+		  "/**",
+		  " * $1",
+		  " * @param",
+		  " */"
+		],
+		"description": "クラスヘッダーコメントを挿入します"
+	  },
+	
+	"Oblect Header": {
+		"prefix": "object_header",
+		"body": [
+		  "/**",
+		  " * $1",
+		  " */"
+		],
+		"description": "オブジェクトヘッダーコメントを挿入します"
+	  },
+
+	"Method Header": {
+		"prefix": "method_header",
+		"body": [
+		  "/**",
+		  " * @brief $1",
+		  " * @param",
+		  " * @return",
+		  " */"
+		],
+		"description": "メソッドヘッダーコメントを挿入します"
+	  }
+}

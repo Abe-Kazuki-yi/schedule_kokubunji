@@ -1,0 +1,43 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./backend:/app
+      - ./backend/target:/app/target
+      - ./backend/project/target:/app/project/target
+      - ./backend/project/project:/app/project/project
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - DB_URL=jdbc:postgresql://db:5432/mydb
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      #以下の要素はめっちゃ長いランダムな文字列にすること
+      - PLAY_HTTP_SECRET_KEY=changeme-very-long-random-value
+
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d

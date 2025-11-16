@@ -1,0 +1,94 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.04kB done
+#1 DONE 0.0s
+
+#2 [frontend internal] load build definition from Dockerfile
+#2 transferring dockerfile: 224B done
+#2 DONE 0.0s
+
+#3 [backend internal] load build definition from Dockerfile
+#3 transferring dockerfile: 370B done
+#3 DONE 0.0s
+
+#4 [backend internal] load metadata for docker.io/sbtscala/scala-sbt:eclipse-temurin-17.0.15_6_1.11.7_2.13.17
+#4 DONE 0.0s
+
+#5 [backend internal] load .dockerignore
+#5 transferring context: 108B done
+#5 DONE 0.0s
+
+#6 [backend 1/4] FROM docker.io/sbtscala/scala-sbt:eclipse-temurin-17.0.15_6_1.11.7_2.13.17
+#6 DONE 0.0s
+
+#7 [backend internal] load build context
+#7 transferring context: 932B done
+#7 DONE 0.0s
+
+#8 [backend 3/4] COPY . .
+#8 CACHED
+
+#9 [backend 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [backend 4/4] RUN sbt compile
+#10 CACHED
+
+#11 [backend] exporting to image
+#11 exporting layers done
+#11 writing image sha256:9bd9bd5aa87e6d6371dc41afa4d554548558919c5e4e1cfc7edbc3a883917313 done
+#11 naming to docker.io/library/schedule_kokubunji-backend done
+#11 DONE 0.0s
+
+#12 [backend] resolving provenance for metadata file
+#12 DONE 0.0s
+
+#13 [frontend internal] load metadata for docker.io/library/node:22.12.0
+#13 DONE 1.6s
+
+#14 [frontend internal] load .dockerignore
+#14 transferring context: 2B done
+#14 DONE 0.0s
+
+#15 [frontend 1/5] FROM docker.io/library/node:22.12.0@sha256:0e910f435308c36ea60b4cfd7b80208044d77a074d16b768a81901ce938a62dc
+#15 DONE 0.0s
+
+#16 [frontend internal] load build context
+#16 transferring context: 283.46kB 0.2s done
+#16 DONE 0.2s
+
+#17 [frontend 2/5] WORKDIR /app
+#17 CACHED
+
+#18 [frontend 3/5] COPY package*.json ./
+#18 CACHED
+
+#19 [frontend 4/5] RUN npm install
+#19 CACHED
+
+#20 [frontend 5/5] COPY . .
+#20 CACHED
+
+#21 [frontend] exporting to image
+#21 exporting layers done
+#21 writing image sha256:a5104560614abe360bd6778e142e1ce207cacba26369cebeb3add8dc730e6487 done
+#21 naming to docker.io/library/schedule_kokubunji-frontend done
+#21 DONE 0.0s
+
+#22 [frontend] resolving provenance for metadata file
+#22 DONE 0.0s
+ schedule_kokubunji-backend  Built
+ schedule_kokubunji-frontend  Built
+ Network schedule_kokubunji_default  Creating
+ Network schedule_kokubunji_default  Created
+ Container schedule_kokubunji-db-1  Creating
+ Container schedule_kokubunji-db-1  Created
+ Container schedule_kokubunji-backend-1  Creating
+ Container schedule_kokubunji-backend-1  Created
+ Container schedule_kokubunji-frontend-1  Creating
+ Container schedule_kokubunji-frontend-1  Created
+ Container schedule_kokubunji-db-1  Starting
+ Container schedule_kokubunji-db-1  Started
+ Container schedule_kokubunji-backend-1  Starting
+ Container schedule_kokubunji-backend-1  Started
+ Container schedule_kokubunji-frontend-1  Starting
+ Container schedule_kokubunji-frontend-1  Started
