@@ -894,3 +894,270 @@ WARNING: Unmatched cancel notification for request id 5143
 Nov 16, 2025 9:51:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 5289
 2025.11.16 21:51:09 INFO  time: compiled root in 19ms[0m
+2025.11.16 22:11:38 WARN  Could not find semantic tokens for: file:///home/kasukabe/schedule_kokubunji/backend/build.sbt[0m
+2025.11.16 22:11:43 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:11:43 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:11:49 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:11:49 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:11:49 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:11:49 INFO  skipping build import with status 'Installed'[0m
+2025.11.16 22:11:53 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:11:53 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:12:08 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:12:08 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:12:08 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:40 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:40 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:14:50 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:50 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:14:54 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:54 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:54 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:55 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:14:55 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:16:34 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:16:34 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:16:41 INFO  compiling root (1 scala source)[0m
+2025.11.16 22:16:44 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 22:16:44 INFO  time: compiled root in 3.12s[0m
+2025.11.16 22:36:29 INFO  compiling root (4 scala sources and 1 java source)[0m
+2025.11.16 22:36:36 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 22:36:36 INFO  time: compiled root in 8.28s[0m
+2025.11.16 22:52:32 INFO  Created report: Optional.empty[0m
+2025.11.16 22:52:32 INFO  No project associated with Uri(file:<WORKSPACE>/project/project/?id=backend-build-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._22-52-32-886.md")[0m
+2025.11.16 22:52:32 INFO  No project associated with Uri(file:<WORKSPACE>/project/project/?id=backend-build-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._22-52-32-886.md")[0m
+2025.11.16 22:52:32 INFO  No project associated with Uri(file:<WORKSPACE>/project/project/?id=backend-build-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._22-52-32-886.md")[0m
+Nov 16, 2025 10:53:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5649
+Nov 16, 2025 10:56:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.11.16 22:56:47 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 22:56:47 INFO  Bloop should support `buildTarget/jvmRunEnvironment`, but it fails.
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: No project associated with Uri(file:/home/kasukabe/schedule_kokubunji/backend/project/?id=backend-build)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.16 22:57:08 INFO  running '/usr/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2025.11.16 22:57:08 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/project/project/metals.sbt. Using presentation compiler with project's scala-library version: 2.13.17[0m
+2025.11.16 22:57:08 WARN  no build target for: /home/kasukabe/schedule_kokubunji/backend/project/project/metals.sbt[0m
+2025.11.16 22:57:10 INFO  [info] welcome to sbt 1.11.5 (Ubuntu Java 17.0.16)[0m
+2025.11.16 22:57:14 INFO  [info] loading settings for project backend-build-build-build from metals.sbt...[0m
+2025.11.16 22:57:14 INFO  [info] loading project definition from /home/kasukabe/schedule_kokubunji/backend/project/project/project[0m
+2025.11.16 22:57:17 INFO  [info] loading settings for project backend-build-build from metals.sbt...[0m
+2025.11.16 22:57:17 INFO  [info] loading project definition from /home/kasukabe/schedule_kokubunji/backend/project/project[0m
+2025.11.16 22:57:21 INFO  [success] Generated .bloop/backend-build-build.json[0m
+2025.11.16 22:57:21 INFO  [success] Total time: 4 s, completed Nov 16, 2025, 10:57:21 PM[0m
+2025.11.16 22:57:23 INFO  [info] loading settings for project backend-build from metals.sbt, plugins.sbt...[0m
+2025.11.16 22:57:23 INFO  [info] loading project definition from /home/kasukabe/schedule_kokubunji/backend/project[0m
+2025.11.16 22:57:26 INFO  [success] Generated .bloop/backend-build.json[0m
+2025.11.16 22:57:26 INFO  [warn] Removed stale /home/kasukabe/schedule_kokubunji/backend/project/.bloop/app-build.json[0m
+2025.11.16 22:57:26 INFO  [success] Total time: 4 s, completed Nov 16, 2025, 10:57:27 PM[0m
+2025.11.16 22:57:29 INFO  [info] loading settings for project root from build.sbt...[0m
+2025.11.16 22:57:29 INFO  [info]   __              __[0m
+2025.11.16 22:57:29 INFO  [info]   \ \     ____   / /____ _ __  __[0m
+2025.11.16 22:57:29 INFO  [info]    \ \   / __ \ / // __ `// / / /[0m
+2025.11.16 22:57:29 INFO  [info]    / /  / /_/ // // /_/ // /_/ /[0m
+2025.11.16 22:57:29 INFO  [info]   /_/  / .___//_/ \__,_/ \__, /[0m
+2025.11.16 22:57:29 INFO  [info]       /_/               /____/[0m
+2025.11.16 22:57:29 INFO  [info] [0m
+2025.11.16 22:57:29 INFO  [info] Version 3.0.9 running Java 17.0.16[0m
+2025.11.16 22:57:29 INFO  [info] [0m
+2025.11.16 22:57:29 INFO  [info] Play is run entirely by the community. Please consider contributing and/or donating:[0m
+2025.11.16 22:57:29 INFO  [info] https://www.playframework.com/sponsors[0m
+2025.11.16 22:57:29 INFO  [info] [0m
+2025.11.16 22:57:34 INFO  [success] Generated .bloop/root-test.json[0m
+2025.11.16 22:57:34 INFO  [success] Generated .bloop/root.json[0m
+2025.11.16 22:57:34 INFO  [success] Total time: 4 s, completed Nov 16, 2025, 10:57:34 PM[0m
+2025.11.16 22:57:35 INFO  time: ran 'sbt bloopInstall' in 28s[0m
+2025.11.16 22:57:35 INFO  Disconnecting from Bloop session...[0m
+2025.11.16 22:57:35 INFO  Shut down connection with build server.[0m
+2025.11.16 22:57:35 INFO  Shut down connection with build server.[0m
+2025.11.16 22:57:35 INFO  Shut down connection with build server.[0m
+2025.11.16 22:57:35 INFO  Attempting to connect to the build server...[0m
+2025.11.16 22:57:35 INFO  Found a Bloop server running[0m
+2025.11.16 22:57:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.16 22:57:35 INFO  Attempting to connect to the build server...[0m
+2025.11.16 22:57:35 INFO  Found a Bloop server running[0m
+2025.11.16 22:57:35 INFO  Attempting to connect to the build server...[0m
+2025.11.16 22:57:35 INFO  Found a Bloop server running[0m
+2025.11.16 22:57:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.16 22:57:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.16 22:57:35 INFO  time: Connected to build server in 0.28s[0m
+2025.11.16 22:57:35 INFO  Connected to Build server: Bloop v2.0.16[0m
+2025.11.16 22:57:40 INFO  time: indexed workspace in 5.04s[0m
+Nov 16, 2025 10:59:38 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.11.16 23:01:28 INFO  Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-library.jar doesn't exist! (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_Scala instance jar /..._21-48-50-049.md")[0m
+2025.11.16 23:01:28 INFO  Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-xml_2.12-2.3.0.jar doesn't exist! (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_Scala instance jar /..._21-48-50-098.md")[0m
+2025.11.16 23:01:28 INFO  Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-compiler.jar doesn't exist! (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_Scala instance jar /..._21-48-50-102.md")[0m
+2025.11.16 23:01:28 INFO  Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-reflect.jar doesn't exist! (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_Scala instance jar /..._21-48-50-107.md")[0m
+2025.11.16 23:01:28 INFO  /opt/java/openjdk release file missing JAVA_VERSION property - using Bloop's JVM version 17.0.16 (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_/opt/java/openjdk re..._21-48-50-118.md")[0m
+2025.11.16 23:01:28 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 23:01:28 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 23:01:28 INFO  No project associated with Uri(file:<WORKSPACE>/project/?id=backend-build) (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/bloop/2025-11-16/r_No project associate..._21-48-50-122.md")[0m
+2025.11.16 23:01:36 INFO  compiling root (15 scala sources and 1 java source)[0m
+2025.11.16 23:01:45 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:01:45 INFO  time: compiled root in 8.51s[0m
+2025.11.16 23:03:38 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:03:38 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:03:38 INFO  time: compiled root in 0.75s[0m
+2025.11.16 23:03:53 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/module/ClockModule.scala][0m
+2025.11.16 23:03:53 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-03-53-279.md")[0m
+2025.11.16 23:03:53 WARN  Could not find 'Clock' using presentation compiler nor semanticdb. Trying to guess the definition using available information from local class context. [0m
+2025.11.16 23:03:53 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-03-53-279.md")[0m
+2025.11.16 23:03:54 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:03:54 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:03:54 INFO  time: compiled root in 0.87s[0m
+2025.11.16 23:05:35 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:05:35 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:05:35 INFO  time: compiled root in 0.34s[0m
+2025.11.16 23:06:21 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/file:/home/kasukabe/schedule_kokubunji/backend/src/main/scala/table/UserTable.scala][0m
+2025.11.16 23:06:21 INFO  expected identifier; obtained class (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals/2025-11-16/r_scala-toplevel-mtags_23-06-20-993.md")[0m
+2025.11.16 23:06:21 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:06:21 INFO  time: compiled root in 0.19s[0m
+Nov 16, 2025 11:06:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5761
+2025.11.16 23:06:31 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:06:31 INFO  time: compiled root in 0.48s[0m
+2025.11.16 23:07:34 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:07:34 INFO  time: compiled root in 0.36s[0m
+2025.11.16 23:08:29 INFO  time: compiled root in 8ms[0m
+2025.11.16 23:09:16 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/repository/UserRepository.scala][0m
+2025.11.16 23:09:16 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-09-16-136.md")[0m
+2025.11.16 23:09:28 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:09:28 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:09:28 INFO  time: compiled root in 0.34s[0m
+2025.11.16 23:09:33 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:09:33 INFO  time: compiled root in 0.31s[0m
+2025.11.16 23:09:39 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:09:39 INFO  time: compiled root in 0.22s[0m
+2025.11.16 23:10:03 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/repository/UserRepository.scala][0m
+2025.11.16 23:10:03 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-10-03-744.md")[0m
+2025.11.16 23:10:03 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/repository/UserRepository.scala][0m
+2025.11.16 23:10:03 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-10-03-794.md")[0m
+2025.11.16 23:10:08 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-10-03-794.md")[0m
+2025.11.16 23:10:09 INFO  Created report: Optional[file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/repository/UserRepository.scala][0m
+2025.11.16 23:10:09 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/kasukabe/schedule_kokubunji/backend/.metals/.reports/metals-full/2025-11-16/r_empty-definition_(root)_23-10-09-124.md")[0m
+2025.11.16 23:10:11 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:10:11 INFO  time: compiled root in 0.27s[0m
+2025.11.16 23:10:28 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:10:28 INFO  time: compiled root in 0.44s[0m
+2025.11.16 23:10:43 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:10:43 INFO  time: compiled root in 0.25s[0m
+2025.11.16 23:11:17 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:11:17 INFO  time: compiled root in 0.29s[0m
+2025.11.16 23:11:23 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:11:25 INFO  time: compiled root in 1.65s[0m
+2025.11.16 23:11:28 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:11:29 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:11:29 INFO  time: compiled root in 1.52s[0m
+2025.11.16 23:11:38 INFO  compiling root (4 scala sources)[0m
+Nov 16, 2025 11:11:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6214
+2025.11.16 23:11:38 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:11:38 INFO  time: compiled root in 0.76s[0m
+2025.11.16 23:11:42 INFO  compiling root (4 scala sources)[0m
+2025.11.16 23:11:42 INFO  time: compiled root in 0.67s[0m
+2025.11.16 23:11:48 INFO  compiling root (4 scala sources)[0m
+2025.11.16 23:11:48 INFO  time: compiled root in 0.75s[0m
+2025.11.16 23:11:54 INFO  compiling root (4 scala sources)[0m
+2025.11.16 23:11:54 INFO  time: compiled root in 0.48s[0m
+2025.11.16 23:12:01 INFO  compiling root (4 scala sources)[0m
+2025.11.16 23:12:03 INFO  time: compiled root in 1.85s[0m
+2025.11.16 23:12:32 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:12:33 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:12:33 INFO  time: compiled root in 1.47s[0m
+2025.11.16 23:15:32 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:15:32 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:15:32 INFO  time: compiled root in 1.37s[0m
+2025.11.16 23:16:42 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:16:43 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:16:43 INFO  time: compiled root in 1.06s[0m
+2025.11.16 23:34:33 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:34:38 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:34:38 INFO  time: compiled root in 4.54s[0m
+Nov 16, 2025 11:35:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6805
+2025.11.16 23:35:55 INFO  compiling root (1 scala source)[0m
+2025.11.16 23:35:58 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.16 23:35:58 INFO  time: compiled root in 3.87s[0m

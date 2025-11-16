@@ -1,5 +1,4 @@
 package model
-import struct.AccountTypeEnum._
 import struct.RoleEnum._
 /*
  * ===========================================================

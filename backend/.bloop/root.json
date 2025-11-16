@@ -24,7 +24,6 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_2.13/3.0.9/play-pekko-http-server_2.13-3.0.9.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_2.13/3.0.9/play-filters-helpers_2.13-3.0.9.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_2.13/3.0.9/play-guice_2.13-3.0.9.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.4/play-ws_2.13-3.0.4.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick_2.13/5.2.0/play-slick_2.13-5.2.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick-evolutions_2.13/5.2.0/play-slick-evolutions_2.13-5.2.0.jar",
@@ -40,10 +39,6 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_2.13/1.0.1/pekko-http-core_2.13-1.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.3/play-ws-standalone_2.13-3.0.3.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.3/play-ws-standalone-xml_2.13-3.0.3.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.3/play-ws-standalone-json_2.13-3.0.3.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.9.0/play_2.13-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.9.0/play-jdbc-api_2.13-2.9.0.jar",
@@ -81,12 +76,12 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.6.1/ssl-config-core_2.13-0.6.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_2.13/1.0.1/pekko-parsing_2.13-1.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_2.13/2.5.0/parboiled_2.13-2.5.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-build-link/2.9.0/play-build-link-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.9.0/play-streams_2.13-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-configuration_2.13/2.9.0/play-configuration_2.13-2.9.0.jar",
@@ -104,6 +99,7 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.9.0/play-exceptions-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.21/akka-stream_2.13-2.6.21.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar",
@@ -237,7 +233,6 @@
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-pekko-http-server_2.13/3.0.9/play-pekko-http-server_2.13-3.0.9.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_2.13/3.0.9/play-filters-helpers_2.13-3.0.9.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_2.13/3.0.9/play-guice_2.13-3.0.9.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.4/play-ws_2.13-3.0.4.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick_2.13/5.2.0/play-slick_2.13-5.2.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick-evolutions_2.13/5.2.0/play-slick-evolutions_2.13-5.2.0.jar",
@@ -253,10 +248,6 @@
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-http-core_2.13/1.0.1/pekko-http-core_2.13-1.0.1.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/guice/6.0.0/guice-6.0.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.3/play-ws-standalone_2.13-3.0.3.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.3/play-ws-standalone-xml_2.13-3.0.3.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.3/play-ws-standalone-json_2.13-3.0.3.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.9.0/play_2.13-2.9.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.9.0/play-jdbc-api_2.13-2.9.0.jar",
@@ -294,12 +285,12 @@
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.6.1/ssl-config-core_2.13-0.6.1.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.13/1.1.2/scala-parser-combinators_2.13-1.1.2.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar",
+                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_2.13/1.0.1/pekko-parsing_2.13-1.0.1.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_2.13/2.5.0/parboiled_2.13-2.5.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar",
-                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-build-link/2.9.0/play-build-link-2.9.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.9.0/play-streams_2.13-2.9.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-configuration_2.13/2.9.0/play-configuration_2.13-2.9.0.jar",
@@ -317,6 +308,7 @@
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar",
+                "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.9.0/play-exceptions-2.9.0.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.13/2.6.21/akka-stream_2.13-2.6.21.jar",
                 "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar",
@@ -442,23 +434,6 @@
                             "name": "play-guice_2.13",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_2.13/3.0.9/play-guice_2.13-3.0.9-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws_2.13",
-                    "version": "3.0.4",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.4/play-ws_2.13-3.0.4.jar"
-                        },
-                        {
-                            "name": "play-ws_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.4/play-ws_2.13-3.0.4-sources.jar"
                         }
                     ]
                 },
@@ -714,74 +689,6 @@
                             "name": "guice-assistedinject",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone_2.13",
-                    "version": "3.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.3/play-ws-standalone_2.13-3.0.3.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.3/play-ws-standalone_2.13-3.0.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone-xml_2.13",
-                    "version": "3.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone-xml_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.3/play-ws-standalone-xml_2.13-3.0.3.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone-xml_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.3/play-ws-standalone-xml_2.13-3.0.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone-json_2.13",
-                    "version": "3.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone-json_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.3/play-ws-standalone-json_2.13-3.0.3.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone-json_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.3/play-ws-standalone-json_2.13-3.0.3-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.pekko",
-                    "name": "pekko-stream_2.13",
-                    "version": "1.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "pekko-stream_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar"
-                        },
-                        {
-                            "name": "pekko-stream_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3-sources.jar"
                         }
                     ]
                 },
@@ -1416,6 +1323,23 @@
                 },
                 {
                     "organization": "org.apache.pekko",
+                    "name": "pekko-stream_2.13",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-stream_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-stream_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
                     "name": "pekko-parsing_2.13",
                     "version": "1.0.1",
                     "configurations": "default",
@@ -1496,23 +1420,6 @@
                             "name": "error_prone_annotations",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.pekko",
-                    "name": "pekko-protobuf-v3_2.13",
-                    "version": "1.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "pekko-protobuf-v3_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar"
-                        },
-                        {
-                            "name": "pekko-protobuf-v3_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3-sources.jar"
                         }
                     ]
                 },
@@ -1797,6 +1704,23 @@
                             "name": "j2objc-annotations",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-protobuf-v3_2.13",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3-sources.jar"
                         }
                     ]
                 },

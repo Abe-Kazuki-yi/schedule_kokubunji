@@ -10,9 +10,6 @@ lazy val root = (project in file("."))
       // Play Framework
       "org.scalatestplus.play" %% "scalatestplus-play" % "7.0.2" % Test,
 
-      // Play Frameworkで外部APIとの連携に必要
-      "org.playframework" %% "play-ws" % "3.0.4",
-
       // postgreSQL
       "org.postgresql" % "postgresql" % "42.7.3",
 

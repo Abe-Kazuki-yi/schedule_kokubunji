@@ -1,7 +1,6 @@
 package table
 import slick.jdbc.PostgresProfile.api._
 import struct.RoleEnum._
-import struct.AccountTypeEnum._
 import model.User
 /*
  * ===========================================================

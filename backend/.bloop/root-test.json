@@ -26,7 +26,6 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-filters-helpers_2.13/3.0.9/play-filters-helpers_2.13-3.0.9.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-guice_2.13/3.0.9/play-guice_2.13-3.0.9.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/play/scalatestplus-play_2.13/7.0.2/scalatestplus-play_2.13-7.0.2.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick_2.13/5.2.0/play-slick_2.13-5.2.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-slick-evolutions_2.13/5.2.0/play-slick-evolutions_2.13-5.2.0.jar",
@@ -59,10 +58,6 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/selenium-4-12_2.13/3.2.17.0/selenium-4-12_2.13-3.2.17.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/4.14.1/selenium-java-4.14.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-cssparser/1.14.0/htmlunit-cssparser-1.14.0.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.9.0/play_2.13-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.9.0/play-jdbc-api_2.13-2.9.0.jar",
@@ -123,8 +118,10 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-parsing_2.13/1.0.1/pekko-parsing_2.13-1.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/parboiled/parboiled_2.13/2.5.0/parboiled_2.13-2.5.0.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ahc-ws-standalone_2.13/3.0.7/play-ahc-ws-standalone_2.13-3.0.7.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-asynchttpclient/3.0.7/shaded-asynchttpclient-3.0.7.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/shaded-oauth/3.0.7/shaded-oauth-3.0.7.jar",
@@ -150,7 +147,6 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar",
-            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-build-link/2.9.0/play-build-link-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-streams_2.13/2.9.0/play-streams_2.13-2.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-configuration_2.13/2.9.0/play-configuration_2.13-2.9.0.jar",
@@ -189,6 +185,10 @@
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-validator/commons-validator/1.7/commons-validator-1.7.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-net/commons-net/3.9.0/commons-net-3.9.0.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7.jar",
+            "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/cachecontrol_2.13/3.0.1/cachecontrol_2.13-3.0.1.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.17/scalatest-compatible-3.2.17.jar",
             "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.17/scalactic_2.13-3.2.17.jar",
@@ -723,23 +723,6 @@
                             "name": "guice-assistedinject",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/6.0.0/guice-assistedinject-6.0.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.pekko",
-                    "name": "pekko-stream_2.13",
-                    "version": "1.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "pekko-stream_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar"
-                        },
-                        {
-                            "name": "pekko-stream_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3-sources.jar"
                         }
                     ]
                 },
@@ -1374,6 +1357,23 @@
                 },
                 {
                     "organization": "org.apache.pekko",
+                    "name": "pekko-stream_2.13",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-stream_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-stream_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-stream_2.13/1.0.3/pekko-stream_2.13-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.pekko",
                     "name": "pekko-parsing_2.13",
                     "version": "1.0.1",
                     "configurations": "default",
@@ -1454,23 +1454,6 @@
                             "name": "error_prone_annotations",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.apache.pekko",
-                    "name": "pekko-protobuf-v3_2.13",
-                    "version": "1.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "pekko-protobuf-v3_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar"
-                        },
-                        {
-                            "name": "pekko-protobuf-v3_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3-sources.jar"
                         }
                     ]
                 },
@@ -1759,6 +1742,23 @@
                     ]
                 },
                 {
+                    "organization": "org.apache.pekko",
+                    "name": "pekko-protobuf-v3_2.13",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3.jar"
+                        },
+                        {
+                            "name": "pekko-protobuf-v3_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/pekko/pekko-protobuf-v3_2.13/1.0.3/pekko-protobuf-v3_2.13-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.typesafe.play",
                     "name": "play-exceptions",
                     "version": "2.9.0",
@@ -1891,23 +1891,6 @@
                             "name": "scalatestplus-play_2.13",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatestplus/play/scalatestplus-play_2.13/7.0.2/scalatestplus-play_2.13-7.0.2-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws_2.13",
-                    "version": "3.0.8",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8.jar"
-                        },
-                        {
-                            "name": "play-ws_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8-sources.jar"
                         }
                     ]
                 },
@@ -2180,57 +2163,6 @@
                             "name": "htmlunit-cssparser",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-cssparser/1.14.0/htmlunit-cssparser-1.14.0-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone_2.13",
-                    "version": "3.0.7",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone-xml_2.13",
-                    "version": "3.0.7",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone-xml_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone-xml_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.playframework",
-                    "name": "play-ws-standalone-json_2.13",
-                    "version": "3.0.7",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "play-ws-standalone-json_2.13",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7.jar"
-                        },
-                        {
-                            "name": "play-ws-standalone-json_2.13",
-                            "classifier": "sources",
-                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7-sources.jar"
                         }
                     ]
                 },
@@ -2520,6 +2452,23 @@
                             "name": "selenium-manager",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-ws_2.13",
+                    "version": "3.0.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8.jar"
+                        },
+                        {
+                            "name": "play-ws_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws_2.13/3.0.8/play-ws_2.13-3.0.8-sources.jar"
                         }
                     ]
                 },
@@ -3370,6 +3319,57 @@
                             "name": "failsafe",
                             "classifier": "sources",
                             "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-ws-standalone_2.13",
+                    "version": "3.0.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone_2.13/3.0.7/play-ws-standalone_2.13-3.0.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-ws-standalone-xml_2.13",
+                    "version": "3.0.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-xml_2.13/3.0.7/play-ws-standalone-xml_2.13-3.0.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.playframework",
+                    "name": "play-ws-standalone-json_2.13",
+                    "version": "3.0.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7.jar"
+                        },
+                        {
+                            "name": "play-ws-standalone-json_2.13",
+                            "classifier": "sources",
+                            "path": "/home/kasukabe/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-ws-standalone-json_2.13/3.0.7/play-ws-standalone-json_2.13-3.0.7-sources.jar"
                         }
                     ]
                 },

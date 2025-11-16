@@ -1,14 +1,12 @@
 package controller
 import play.api.mvc._
 import play.api.libs.json._
-import play.api.libs.ws._
 import javax.inject._
 import scala.concurrent.{ExecutionContext, Future}
 import service.AuthService
 import repository.UserRepository
 import utility.JwtUtil
 import struct.RoleEnum._
-import struct.AccountTypeEnum._
 import model.User
 /*
  * ===========================================================
@@ -61,7 +59,8 @@ extends AbstractController(cc) {
     def signIn = Action.async(parse.json) { request =>
         request.body.validate[PasswordLoginRequest].fold(
         _ => Future.successful(BadRequest("Invalid request")),
-        data => authService.authenticate(data.username, data.password).map {
+        data => authService.authenticate(data.username, data.password)
+        .map {
             case Some(user: User) =>
                 val token : String = jwtUtil.createToken(user.id, user.role)
                 Ok(Json.obj(
@@ -72,6 +71,13 @@ extends AbstractController(cc) {
                 .withCookies(Cookie("auth_token", token, httpOnly = true))
                 case None =>
                     Unauthorized(Json.obj("error" -> "Invalid username or password"))
+        }
+        .recover {
+          case ex: Throwable =>
+            InternalServerError(Json.obj(
+              "error" -> "userテーブルをデータベースに作ってないよ",
+              "details" -> ex.getMessage
+            ))
         }
         )
     }

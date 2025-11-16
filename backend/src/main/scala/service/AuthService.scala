@@ -3,7 +3,6 @@ import org.mindrot.jbcrypt.BCrypt
 import scala.concurrent.{ExecutionContext, Future}
 import javax.inject.Inject
 import struct.RoleEnum._
-import struct.AccountTypeEnum._
 import model.User
 import repository.UserRepository
 
@@ -43,7 +42,7 @@ class AuthService @Inject() (userRepository: UserRepository)
    */
   def authenticate(username: String, password: String): Future[Option[User]] = {
     userRepository.findByUsername(username).map {
-      case Some(user) if user.password.exists(hashed => BCrypt.checkpw(username, password)) =>
+      case Some(user) if BCrypt.checkpw(password, user.password) =>
         Some(user)
       case _ =>
         None

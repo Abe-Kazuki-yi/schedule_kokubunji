@@ -1,10 +1,9 @@
 package repository
-import slick.jdbc.PostgresProfile.api._
-import scala.concurrent.{Future, ExecutionContext}
 import javax.inject.{Inject, Singleton}
+import slick.jdbc.JdbcProfile
+import scala.concurrent.{Future, ExecutionContext}
 import table.UserTable
 import struct.RoleEnum._
-import struct.AccountTypeEnum._
 import model.User
 /*
  * ===========================================================
@@ -20,9 +19,14 @@ import model.User
  * @param users UserTableの基本的な処理が入ったTableQurey型
  */
 @Singleton
-class UserRepository @Inject()(db: Database)(implicit ec: ExecutionContext) {
+class UserRepository @Inject()(
+    protected val dbConfigProvider: play.api.db.slick.DatabaseConfigProvider
+)(implicit ec: ExecutionContext) {
 
-    private val users = TableQuery[UserTable]
+  private val dbConfig = dbConfigProvider.get[JdbcProfile]
+  import dbConfig.profile.api._
+
+  private val users = UserTable.methods
 
     /**
      * @brief userテーブルへのEmailでの新規登録
@@ -34,7 +38,7 @@ class UserRepository @Inject()(db: Database)(implicit ec: ExecutionContext) {
      */
     def createUser(username: String, password: String, role: Role): Future[Int] = {
         val user : User = User(0L, username, password, role)
-        db.run(users += user)
+        dbConfig.db.run(users += user)
     }
 
     /**
@@ -43,7 +47,7 @@ class UserRepository @Inject()(db: Database)(implicit ec: ExecutionContext) {
      * @return 最初にusernameが一致したレコード
      */
     def findByUsername(username: String): Future[Option[User]] = {
-        db.run(users.filter(_.username === Option(username)).result.headOption)
+        dbConfig.db.run(users.filter(_.username === username).result.headOption)
     }
 
 }
