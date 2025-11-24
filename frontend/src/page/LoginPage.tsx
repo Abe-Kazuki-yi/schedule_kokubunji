@@ -1,10 +1,22 @@
 import { useState } from "react";
 import { loginWithPassword } from "@/lib/auth/authService";
 
+import BeforLoginLayout from "@/layout/BeforeLoginLayout";
+/*
+ * ===========================================================
+ *  ファイル名 : LoginPage.tsx
+ *  概要       : ログインページ
+ *  作成者     : Fury Kasukabe
+ *  作成日     : 2025-11-22
+ * ===========================================================
+ */
+
+
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,14 +40,19 @@ export default function LoginPage() {
 
   return (
     <div>
+      <BeforLoginLayout>
         <h1>ログインページです</h1>
         <form onSubmit={handleLogin}>
-            <input value={username} onChange={e => setUsername(e.target.value)} />
-            <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-            <button type="submit">ログイン</button>
+          <label>ユーザー名<input value={username} onChange={e => setUsername(e.target.value)} /></label>
+          <br/>
+          <label>パスワード<input type={showPassword ? "text" : "password"} value={password} onChange={e => setPassword(e.target.value)} /></label>
+          <button type="button" onClick={() => setShowPassword(!showPassword)}>{showPassword ? "非表示" : "表示"}</button>
+          <br/>
+          <button type="submit">ログイン</button>
         </form>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
+      </BeforLoginLayout>
     </div>
   );
 }

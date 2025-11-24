@@ -19,33 +19,33 @@ object RoleEnum {
     case object Admin extends Role
 
     /**
-    * Roleの内容をStringに変換するimplicit。jsonやdbでの受け渡しで使用
+    * Roleの内容をStringに変換するimplicit。
     */
     //第一引数scala→String, 第二引数String→scala
     implicit val roleColumnType: BaseColumnType[Role] = MappedColumnType.base[Role, String](
         {
-            case Student => "Student"
-            case Teacher => "Teacher"
-            case Admin   => "Admin"
+            case Student => "student"
+            case Teacher => "teacher"
+            case Admin   => "admin"
         },
         {
-            case "Student" => Student
-            case "Teacher" => Teacher
-            case "Admin"   => Admin
+            case "student" => Student
+            case "teacher" => Teacher
+            case "admin"   => Admin
         }
   )
 
     implicit val roleFormat: Format[Role] = new Format[Role] {
         def writes(role: Role): JsValue = JsString(role match {
-        case Student => "Student"
-        case Teacher => "Teacher"
-        case Admin   => "Admin"
+        case Student => "student"
+        case Teacher => "teacher"
+        case Admin   => "admin"
         })
 
     def reads(json: JsValue): JsResult[Role] = json match {
-        case JsString("Student") => JsSuccess(Student)
-        case JsString("Teacher") => JsSuccess(Teacher)
-        case JsString("Admin")   => JsSuccess(Admin)
+        case JsString("student") => JsSuccess(Student)
+        case JsString("teacher") => JsSuccess(Teacher)
+        case JsString("admin")   => JsSuccess(Admin)
         case _ => JsError("Invalid Role")
         }
   }

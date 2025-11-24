@@ -16,10 +16,12 @@ import model.User
  * SlickのTableクラスとして振る舞う
  */
 class UserTable(tag: Tag) extends Table[User](tag, "users") {
+  import struct.RoleEnum._ 
+
   def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
   def username = column[String]("username", O.Unique)
   def password = column[String]("password")
-  def role = column[Role]("role")
+  def role = column[Role]("role", O.SqlType("role"))
 
   def * = (id, username, password, role) <> ((User.apply _).tupled, User.unapply)
 }

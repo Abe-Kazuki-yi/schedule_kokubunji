@@ -1,4 +1,10 @@
 -- seeds.sql（任意）
+-- Users
+INSERT INTO users(username, password, role) VALUES
+ ('admin', '$2a$10$WCuIuTMIYnXQI13UckuHM.1x6Rso.JpgdMUMSigxTC6FmVH0KM/1K', 'admin'),
+ ('teacher', '$2a$10$SO28RLgO/R0sVcquGPmGvugS2CIt0BV19RWEGVKgMXlo5sP3IF4l.', 'teacher'),
+ ('student', '$2a$10$oFa6Wa8ep.1JLPNsofFN6uxSk6aHx5N13R5ber.S/nA3PSh0t4CI.', 'student');
+
 -- 講師
 INSERT INTO teachers(name,is_admin) VALUES
  ('山田 太郎',false),

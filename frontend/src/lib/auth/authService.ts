@@ -29,3 +29,24 @@ export const loginWithPassword = async (username: string, password: string) => {
 
   return await res.json(); // token / role などが返る
 };
+
+// 新規登録
+export const register = async (username: string, password: string, role: string) => {
+  const registerUrl = `${API_BASE_URL}/auth/register`;
+
+  const res = await fetch(registerUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, password, role }),
+    credentials: "include",
+  });
+
+  if (!res.ok) {
+    const msg = await res.text();
+    throw new Error(msg);
+  }
+
+  return res.text();
+};

@@ -47,7 +47,7 @@ extends AbstractController(cc) {
          request.body.validate[RegisterRequest].fold(
         _ => Future.successful(BadRequest("Invalid request")),
         data => authService.register(data.username, data.password, data.role)
-        .map(_ => Ok("User registered"))
+        .map(_ => Created("User registered")) 
         )
     }
 

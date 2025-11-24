@@ -25,4 +25,12 @@ docker ps -a
 (-fのオプションは起動が終了するまでログを追い続ける,付けなくても良い)
 docker logs -f schedule_kokubunji-backend-1
 (--tail 数字で末尾から特定の行数だけ表示)
+
+以下のコマンドで実行中のDBにアクセス
+docker exec -it schedule_kokubunji-db-1 psql -U postgres -d mydb
+
+DB内で
+/dt
+テーブル一覧を表示。通常のSQL文は末尾に;が必要
+exitで抜けれる
 =============================================

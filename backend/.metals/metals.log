@@ -1161,3 +1161,1335 @@ WARNING: Unmatched cancel notification for request id 6805
 2025.11.16 23:35:55 INFO  compiling root (1 scala source)[0m
 2025.11.16 23:35:58 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
 2025.11.16 23:35:58 INFO  time: compiled root in 3.87s[0m
+2025.11.17 20:37:31 INFO  Started: Metals version 1.6.3 in folders '/home/kasukabe/schedule_kokubunji/backend' for client Cursor 1.99.3.[0m
+2025.11.17 20:37:33 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.11.17 20:37:33 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/controller/AuthController.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.17 20:37:33 INFO  Attempting to connect to the build server...[0m
+2025.11.17 20:37:33 INFO  No running Bloop server found, starting one.[0m
+2025.11.17 20:37:35 INFO  Starting compilation server[0m
+2025.11.17 20:37:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.17 20:37:37 INFO  Attempting to connect to the build server...[0m
+2025.11.17 20:37:37 INFO  Found a Bloop server running[0m
+2025.11.17 20:37:37 INFO  Attempting to connect to the build server...[0m
+2025.11.17 20:37:37 INFO  Found a Bloop server running[0m
+2025.11.17 20:37:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.17 20:37:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-library.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-xml_2.12-2.3.0.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-compiler.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-reflect.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR /opt/java/openjdk release file missing JAVA_VERSION property - using Bloop's JVM version 17.0.16[0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-library.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-xml_2.12-2.3.0.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-compiler.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-reflect.jar doesn't exist![0m
+2025.11.17 20:37:37 ERROR /opt/java/openjdk release file missing JAVA_VERSION property - using Bloop's JVM version 17.0.16[0m
+2025.11.17 20:37:37 INFO  time: Connected to build server in 4.22s[0m
+2025.11.17 20:37:37 INFO  Connected to Build server: Bloop v2.0.16[0m
+2025.11.17 20:37:37 INFO  Scala targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$1(BloopBspServices.scala:1499)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.scalacOptions$1(BloopBspServices.scala:1497)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$3(BloopBspServices.scala:1518)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.startExecution(TaskCreate.scala:236)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.tryOnSuccess(TaskCreate.scala:202)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.onSuccess(TaskCreate.scala:195)
+	at bloop.task.Task$.result$2(Task.scala:465)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3(Task.scala:475)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3$adapted(Task.scala:473)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:74)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.17 20:37:37 INFO  Scala targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$1(BloopBspServices.scala:1499)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.scalacOptions$1(BloopBspServices.scala:1497)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$3(BloopBspServices.scala:1518)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.execution.schedulers.StartAsyncBatchRunnable.run(StartAsyncBatchRunnable.scala:42)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.17 20:37:37 INFO  Java targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$1(BloopBspServices.scala:1533)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.javacOptions$1(BloopBspServices.scala:1531)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$3(BloopBspServices.scala:1552)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.execution.schedulers.StartAsyncBatchRunnable.run(StartAsyncBatchRunnable.scala:42)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.17 20:37:37 INFO  Java targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$1(BloopBspServices.scala:1533)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.javacOptions$1(BloopBspServices.scala:1531)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$3(BloopBspServices.scala:1552)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.startExecution(TaskCreate.scala:236)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.tryOnSuccess(TaskCreate.scala:202)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.onSuccess(TaskCreate.scala:195)
+	at bloop.task.Task$.result$2(Task.scala:465)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3(Task.scala:475)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3$adapted(Task.scala:473)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:74)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.17 20:37:37 INFO  time: Imported build in 0.26s[0m
+2025.11.17 20:37:41 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.16/sbt-bloop_2.12_1.0-2.0.16-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.3/bloop-config_2.12-2.3.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5.2/jsoniter-scala-core_2.12-2.13.5.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.11.5/sbt-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.11.5/main_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.5/io_2.12-1.10.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.11.5/logic_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.11.5/actions_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.11.5/main-settings_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.11.5/run_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.11.5/command_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.11.5/collections_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.11.5/scripted-plugin_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.11.5/zinc-lm-integration_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.11.5/util-logging_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.4.4/launcher-interface-1.4.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.1.10/lm-coursier-shaded_2.12-2.1.10-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.11.5/librarymanagement-core_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.11.5/librarymanagement-ivy_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.8/compiler-interface-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.10.8/zinc-compile_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.11.5/util-relation_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.11.5/completion_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.11.5/task-system_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.11.5/tasks_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.11.5/testing_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.11.5/util-tracking_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.10.1/sjson-new-core_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.10.1/sjson-new-scalajson_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.9.3/gigahorse-apache-http_2.12-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.27.1/jline-terminal-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.8/zinc-classpath_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.8/zinc-apiinfo_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.8/zinc_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.11.5/core-macros_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.11.5/util-cache_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.11.5/util-control_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.11.5/protocol_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.11.5/util-position_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.8/zinc-compile-core_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.11.5/util-interface-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/jline/jline/2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18/jline-2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jni/3.27.1/jline-terminal-jni-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-native/3.27.1/jline-native-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.20/scala-reflect-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.13.0/scala-collection-compat_2.12-2.13.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.20/scala-compiler-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/mwiede/jsch/0.2.23/jsch-0.2.23-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41/ivy-2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.27.1/jline-reader-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.27.1/jline-builtins-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.11.5/test-agent-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/1.3.2/shaded-jawn-parser_2.12-1.3.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.9.3/gigahorse-core_2.12-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-apache-httpclient5/0.9.3/shaded-apache-httpclient5-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.8/compiler-bridge_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.8/zinc-classfile_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.8/zinc-core_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.8/zinc-persist_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.10.1/sjson-new-murmurhash_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.6.3/ipcsocket-1.6.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.16/zero-allocation-hashing-0.16-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-style/3.27.1/jline-style-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.6.1/ssl-config-core_2.12-0.6.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.8/zinc-persist-core-assembly-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.1/sbinary_2.12-0.5.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.9/sbt-plugin_2.12_1.0-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.18.0/sbt-giter8-scaffold_2.12_1.0-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.12/sbt_1.0/0.9.1/srcs/sbt-revolver-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.9/sbt-routes-compiler_2.12-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.9/play-run-support_2.12-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.5/config-1.4.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-file-watch_2.12/2.0.1/play-file-watch_2.12-2.0.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/sbt-twirl_2.12_1.0/2.0.9/sbt-twirl_2.12_1.0-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.3/sbt-native-packager_2.12_1.0-1.11.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-lib_2.12/0.18.0/giter8-lib_2.12-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.9/twirl-api_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.9/play-build-link-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/methvin/directory-watcher/0.19.0/directory-watcher-0.19.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/pathikrit/better-files_2.12/3.9.2/better-files_2.12-3.9.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-compiler_2.12/2.0.9/twirl-compiler_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.15/ant-1.10.15-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/webjars/webjars-locator-core/0.59/webjars-locator-core-0.59-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.6/spray-json_2.12-1.3.6-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.18.0/giter8-cli-git_2.12-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3.4/ST4-4.3.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.1/plexus-archiver-4.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.9/play-exceptions-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.16.0/jna-5.16.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-parser_2.12/2.0.9/twirl-parser_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.13.8/parsers_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.15/ant-launcher-1.10.15-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/classgraph/classgraph/4.8.173/classgraph-4.8.173-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.5.1/plexus-io-3.5.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/airlift/aircompressor/0.27/aircompressor-0.27-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.12/4.13.8/trees_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.12/4.13.8/common_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.12/4.13.8/io_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.2/sourcecode_2.12-0.4.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.16/sbt-bloop_2.12_1.0-2.0.16-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.3/bloop-config_2.12-2.3.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5.2/jsoniter-scala-core_2.12-2.13.5.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.11.5/sbt-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.11.5/main_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.5/io_2.12-1.10.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.11.5/logic_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.11.5/actions_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.11.5/main-settings_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.11.5/run_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.11.5/command_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.11.5/collections_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.11.5/scripted-plugin_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.11.5/zinc-lm-integration_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.11.5/util-logging_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.4.4/launcher-interface-1.4.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.1.10/lm-coursier-shaded_2.12-2.1.10-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.11.5/librarymanagement-core_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.11.5/librarymanagement-ivy_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.8/compiler-interface-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.10.8/zinc-compile_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.11.5/util-relation_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.11.5/completion_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.11.5/task-system_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.11.5/tasks_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.11.5/testing_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.11.5/util-tracking_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.10.1/sjson-new-core_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.10.1/sjson-new-scalajson_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.9.3/gigahorse-apache-http_2.12-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.27.1/jline-terminal-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.8/zinc-classpath_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.8/zinc-apiinfo_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.8/zinc_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.11.5/core-macros_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.11.5/util-cache_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.11.5/util-control_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.11.5/protocol_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.11.5/util-position_2.12-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.8/zinc-compile-core_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.11.5/util-interface-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/jline/jline/2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18/jline-2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jni/3.27.1/jline-terminal-jni-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-native/3.27.1/jline-native-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.20/scala-reflect-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.13.0/scala-collection-compat_2.12-2.13.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.20/scala-compiler-2.12.20-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/mwiede/jsch/0.2.23/jsch-0.2.23-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41/ivy-2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.27.1/jline-reader-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.27.1/jline-builtins-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.11.5/test-agent-1.11.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/1.3.2/shaded-jawn-parser_2.12-1.3.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.9.3/gigahorse-core_2.12-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-apache-httpclient5/0.9.3/shaded-apache-httpclient5-0.9.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.8/compiler-bridge_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.8/zinc-classfile_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.8/zinc-core_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.8/zinc-persist_2.12-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.10.1/sjson-new-murmurhash_2.12-0.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.6.3/ipcsocket-1.6.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.16/zero-allocation-hashing-0.16-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-style/3.27.1/jline-style-3.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.6.1/ssl-config-core_2.12-0.6.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.8/zinc-persist-core-assembly-1.10.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.1/sbinary_2.12-0.5.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.9/sbt-plugin_2.12_1.0-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.18.0/sbt-giter8-scaffold_2.12_1.0-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.12/sbt_1.0/0.9.1/srcs/sbt-revolver-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.9/sbt-routes-compiler_2.12-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.9/play-run-support_2.12-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.5/config-1.4.5-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-file-watch_2.12/2.0.1/play-file-watch_2.12-2.0.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/sbt-twirl_2.12_1.0/2.0.9/sbt-twirl_2.12_1.0-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.3/sbt-native-packager_2.12_1.0-1.11.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-lib_2.12/0.18.0/giter8-lib_2.12-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.9/twirl-api_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.9/play-build-link-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/methvin/directory-watcher/0.19.0/directory-watcher-0.19.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/pathikrit/better-files_2.12/3.9.2/better-files_2.12-3.9.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-compiler_2.12/2.0.9/twirl-compiler_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.15/ant-1.10.15-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/webjars/webjars-locator-core/0.59/webjars-locator-core-0.59-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.6/spray-json_2.12-1.3.6-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.18.0/giter8-cli-git_2.12-0.18.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3.4/ST4-4.3.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.1/plexus-archiver-4.10.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.9/play-exceptions-3.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.16.0/jna-5.16.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-parser_2.12/2.0.9/twirl-parser_2.12-2.0.9-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.13.8/parsers_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.15/ant-launcher-1.10.15-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/classgraph/classgraph/4.8.173/classgraph-4.8.173-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.5.1/plexus-io-3.5.1-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/airlift/aircompressor/0.27/aircompressor-0.27-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.12/4.13.8/trees_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.12/4.13.8/common_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.12/4.13.8/io_2.12-4.13.8-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30-sources.jar[0m
+2025.11.17 20:37:43 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.2/sourcecode_2.12-0.4.2-sources.jar[0m
+2025.11.17 20:37:43 INFO  time: indexed workspace in 5.42s[0m
+2025.11.17 20:37:44 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 20:37:44 INFO  BSP server: 
+Found names but no class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+    [0m
+Nov 17, 2025 8:40:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.11.17 20:55:55 INFO  compiling root (1 scala source)[0m
+2025.11.17 20:55:59 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 20:55:59 INFO  time: compiled root in 4.55s[0m
+2025.11.17 22:03:06 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:03:09 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:03:09 INFO  time: compiled root in 3.88s[0m
+2025.11.17 22:11:06 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:11:08 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:11:08 INFO  time: compiled root in 2.71s[0m
+Nov 17, 2025 10:15:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 694
+2025.11.17 22:15:22 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:15:22 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:15:22 INFO  time: compiled root in 0.43s[0m
+2025.11.17 22:17:31 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:17:32 INFO  time: compiled root in 1.49s[0m
+2025.11.17 22:17:38 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:17:39 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:17:39 INFO  time: compiled root in 1.1s[0m
+2025.11.17 22:20:12 INFO  time: code lens generation in 1.26s[0m
+2025.11.17 22:26:59 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:26:59 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:26:59 INFO  time: compiled root in 0.61s[0m
+2025.11.17 22:26:59 INFO  compiling root (6 scala sources)[0m
+2025.11.17 22:27:01 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.17 22:27:01 INFO  time: compiled root in 1.1s[0m
+2025.11.17 22:27:11 INFO  compiling root (1 scala source)[0m
+2025.11.17 22:27:12 INFO  time: compiled root in 1.01s[0m
+2025.11.22 10:33:12 INFO  Started: Metals version 1.6.3 in folders '/home/kasukabe/schedule_kokubunji/backend' for client Cursor 1.99.3.[0m
+2025.11.22 10:33:16 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.11.22 10:33:17 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:17 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/controller/AuthController.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:16 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:17 INFO  Attempting to connect to the build server...[0m
+2025.11.22 10:33:17 INFO  No running Bloop server found, starting one.[0m
+2025.11.22 10:33:19 INFO  Starting compilation server[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+Nov 22, 2025 10:33:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:39 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+Nov 22, 2025 10:33:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+Nov 22, 2025 10:33:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 40
+Nov 22, 2025 10:33:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 41
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+Nov 22, 2025 10:33:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 47
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:38 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:40 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:40 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.22 10:33:40 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:42 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:44 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:44 INFO  Attempting to connect to the build server...[0m
+2025.11.22 10:33:44 INFO  Found a Bloop server running[0m
+2025.11.22 10:33:44 INFO  Attempting to connect to the build server...[0m
+2025.11.22 10:33:44 INFO  Found a Bloop server running[0m
+2025.11.22 10:33:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.22 10:33:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/kasukabe/schedule_kokubunji/backend/project/.metals/bsp.trace.json or /home/kasukabe/.cache/metals/bsp.trace.json[0m
+2025.11.22 10:33:44 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-library.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-library.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-xml_2.12-2.3.0.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-xml_2.12-2.3.0.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-compiler.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-reflect.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-compiler.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR Scala instance jar /root/.sbt/boot/scala-2.12.20/lib/scala-reflect.jar doesn't exist![0m
+2025.11.22 10:33:44 ERROR /opt/java/openjdk release file missing JAVA_VERSION property - using Bloop's JVM version 17.0.16[0m
+2025.11.22 10:33:44 ERROR /opt/java/openjdk release file missing JAVA_VERSION property - using Bloop's JVM version 17.0.16[0m
+2025.11.22 10:33:44 INFO  time: Connected to build server in 30s[0m
+2025.11.22 10:33:44 INFO  Connected to Build server: Bloop v2.0.16[0m
+2025.11.22 10:33:44 INFO  Scala targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$1(BloopBspServices.scala:1499)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.scalacOptions$1(BloopBspServices.scala:1497)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$3(BloopBspServices.scala:1518)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.execution.schedulers.StartAsyncBatchRunnable.run(StartAsyncBatchRunnable.scala:42)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:33:44 INFO  Java targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$1(BloopBspServices.scala:1533)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.javacOptions$1(BloopBspServices.scala:1531)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$3(BloopBspServices.scala:1552)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.startExecution(TaskCreate.scala:236)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.tryOnSuccess(TaskCreate.scala:202)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.onSuccess(TaskCreate.scala:195)
+	at bloop.task.Task$.result$2(Task.scala:465)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3(Task.scala:475)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3$adapted(Task.scala:473)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:74)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:33:44 INFO  Scala targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$1(BloopBspServices.scala:1499)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.scalacOptions$1(BloopBspServices.scala:1497)
+	at bloop.bsp.BloopBspServices.$anonfun$scalacOptions$3(BloopBspServices.scala:1518)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.execution.schedulers.StartAsyncBatchRunnable.run(StartAsyncBatchRunnable.scala:42)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:33:44 INFO  Java targets not supported by server
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: java.nio.file.AccessDeniedException: /app
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:397)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:700)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:807)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:793)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2(ClientInfo.scala:211)
+	at bloop.data.ClientInfo$BspClientInfo.$anonfun$getUniqueClassesDirFor$2$adapted(ClientInfo.scala:198)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at bloop.data.ClientInfo$BspClientInfo.getUniqueClassesDirFor(ClientInfo.scala:198)
+	at bloop.data.Project.$anonfun$fullClasspath$1(Project.scala:128)
+	at bloop.data.Project.$anonfun$fullClasspath$1$adapted(Project.scala:126)
+	at scala.collection.immutable.List.foreach(List.scala:431)
+	at bloop.data.Project.fullClasspath(Project.scala:126)
+	at bloop.data.Project.fullClasspath(Project.scala:139)
+	at bloop.bsp.BloopBspServices.getClasspath(BloopBspServices.scala:1479)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$1(BloopBspServices.scala:1533)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.generic.Growable.$plus$plus$eq(Growable.scala:62)
+	at scala.collection.generic.Growable.$plus$plus$eq$(Growable.scala:53)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:184)
+	at scala.collection.mutable.ListBuffer.$plus$plus$eq(ListBuffer.scala:47)
+	at scala.collection.TraversableOnce.to(TraversableOnce.scala:366)
+	at scala.collection.TraversableOnce.to$(TraversableOnce.scala:364)
+	at scala.collection.AbstractIterator.to(Iterator.scala:1431)
+	at scala.collection.TraversableOnce.toList(TraversableOnce.scala:350)
+	at scala.collection.TraversableOnce.toList$(TraversableOnce.scala:350)
+	at scala.collection.AbstractIterator.toList(Iterator.scala:1431)
+	at bloop.bsp.BloopBspServices.javacOptions$1(BloopBspServices.scala:1531)
+	at bloop.bsp.BloopBspServices.$anonfun$javacOptions$3(BloopBspServices.scala:1552)
+	at bloop.bsp.BloopBspServices.$anonfun$ifInitialized$4(BloopBspServices.scala:381)
+	at bloop.task.Task.$anonfun$runAsync$8(Task.scala:268)
+	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:170)
+	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)
+	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.run(TaskCreate.scala:252)
+	at monix.execution.internal.Trampoline.monix$execution$internal$Trampoline$$immediateLoop(Trampoline.scala:66)
+	at monix.execution.internal.Trampoline.startLoop(Trampoline.scala:32)
+	at monix.execution.schedulers.TrampolineExecutionContext$JVMOptimalTrampoline.startLoop(TrampolineExecutionContext.scala:132)
+	at monix.execution.internal.Trampoline.execute(Trampoline.scala:40)
+	at monix.execution.schedulers.TrampolineExecutionContext.execute(TrampolineExecutionContext.scala:57)
+	at monix.execution.schedulers.BatchingScheduler.execute(BatchingScheduler.scala:50)
+	at monix.execution.schedulers.BatchingScheduler.execute$(BatchingScheduler.scala:47)
+	at monix.execution.schedulers.AsyncScheduler.execute(AsyncScheduler.scala:31)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.startExecution(TaskCreate.scala:236)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.tryOnSuccess(TaskCreate.scala:202)
+	at monix.eval.internal.TaskCreate$CallbackForCreate.onSuccess(TaskCreate.scala:195)
+	at bloop.task.Task$.result$2(Task.scala:465)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3(Task.scala:475)
+	at bloop.task.Task$.$anonfun$parSequenceUnordered$3$adapted(Task.scala:473)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:74)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:33:45 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:44 INFO  no build target found for /home/kasukabe/schedule_kokubunji/backend/src/main/scala/struct/Role.scala. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.11.22 10:33:45 INFO  time: Imported build in 0.61s[0m
+2025.11.22 10:34:01 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.16/sbt-bloop_2.12_1.0-2.0.16-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.3/bloop-config_2.12-2.3.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5.2/jsoniter-scala-core_2.12-2.13.5.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.11.5/sbt-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.11.5/main_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.5/io_2.12-1.10.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.11.5/logic_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.11.5/actions_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.11.5/main-settings_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.11.5/run_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.11.5/command_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.11.5/collections_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.11.5/scripted-plugin_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.11.5/zinc-lm-integration_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.11.5/util-logging_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.4.4/launcher-interface-1.4.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.1.10/lm-coursier-shaded_2.12-2.1.10-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.11.5/librarymanagement-core_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.11.5/librarymanagement-ivy_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.8/compiler-interface-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.10.8/zinc-compile_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.11.5/util-relation_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.11.5/completion_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.11.5/task-system_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.11.5/tasks_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.11.5/testing_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.11.5/util-tracking_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.10.1/sjson-new-core_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.10.1/sjson-new-scalajson_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.9.3/gigahorse-apache-http_2.12-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.27.1/jline-terminal-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.8/zinc-classpath_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.8/zinc-apiinfo_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.8/zinc_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.11.5/core-macros_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.11.5/util-cache_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.11.5/util-control_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.11.5/protocol_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.11.5/util-position_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.8/zinc-compile-core_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.11.5/util-interface-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/jline/jline/2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18/jline-2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jni/3.27.1/jline-terminal-jni-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-native/3.27.1/jline-native-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.20/scala-reflect-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.13.0/scala-collection-compat_2.12-2.13.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.20/scala-compiler-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/mwiede/jsch/0.2.23/jsch-0.2.23-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41/ivy-2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.27.1/jline-reader-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.27.1/jline-builtins-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.11.5/test-agent-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/1.3.2/shaded-jawn-parser_2.12-1.3.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.9.3/gigahorse-core_2.12-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-apache-httpclient5/0.9.3/shaded-apache-httpclient5-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.8/compiler-bridge_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.8/zinc-classfile_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.8/zinc-core_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.8/zinc-persist_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.10.1/sjson-new-murmurhash_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.6.3/ipcsocket-1.6.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.16/zero-allocation-hashing-0.16-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-style/3.27.1/jline-style-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.6.1/ssl-config-core_2.12-0.6.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.8/zinc-persist-core-assembly-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.1/sbinary_2.12-0.5.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.9/sbt-plugin_2.12_1.0-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.18.0/sbt-giter8-scaffold_2.12_1.0-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.12/sbt_1.0/0.9.1/srcs/sbt-revolver-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.9/sbt-routes-compiler_2.12-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.9/play-run-support_2.12-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.5/config-1.4.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-file-watch_2.12/2.0.1/play-file-watch_2.12-2.0.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/sbt-twirl_2.12_1.0/2.0.9/sbt-twirl_2.12_1.0-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.3/sbt-native-packager_2.12_1.0-1.11.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-lib_2.12/0.18.0/giter8-lib_2.12-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.9/twirl-api_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.9/play-build-link-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/methvin/directory-watcher/0.19.0/directory-watcher-0.19.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/pathikrit/better-files_2.12/3.9.2/better-files_2.12-3.9.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-compiler_2.12/2.0.9/twirl-compiler_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.15/ant-1.10.15-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/webjars/webjars-locator-core/0.59/webjars-locator-core-0.59-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.6/spray-json_2.12-1.3.6-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.18.0/giter8-cli-git_2.12-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3.4/ST4-4.3.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.1/plexus-archiver-4.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.9/play-exceptions-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.16.0/jna-5.16.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-parser_2.12/2.0.9/twirl-parser_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.13.8/parsers_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.15/ant-launcher-1.10.15-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/classgraph/classgraph/4.8.173/classgraph-4.8.173-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.5.1/plexus-io-3.5.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/airlift/aircompressor/0.27/aircompressor-0.27-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.12/4.13.8/trees_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.12/4.13.8/common_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.12/4.13.8/io_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.2/sourcecode_2.12-0.4.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/2.0.16/sbt-bloop_2.12_1.0-2.0.16-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/2.3.3/bloop-config_2.12-2.3.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.13.5.2/jsoniter-scala-core_2.12-2.13.5.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/unroll-annotation_2.12/0.1.12/unroll-annotation_2.12-0.1.12-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.20/scala-library-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbt/1.11.5/sbt-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.11.5/main_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/io_2.12/1.10.5/io_2.12-1.10.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.11.5/logic_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.11.5/actions_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.11.5/main-settings_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.11.5/run_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.11.5/command_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/collections_2.12/1.11.5/collections_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.11.5/scripted-plugin_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-lm-integration_2.12/1.11.5/zinc-lm-integration_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-logging_2.12/1.11.5/util-logging_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.3.0/scala-xml_2.12-2.3.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.4.4/launcher-interface-1.4.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/get-coursier/lm-coursier-shaded_2.12/2.1.10/lm-coursier-shaded_2.12-2.1.10-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-core_2.12/1.11.5/librarymanagement-core_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.11.5/librarymanagement-ivy_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.10.8/compiler-interface-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.10.8/zinc-compile_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/swoval/file-tree-views/2.1.12/file-tree-views-2.1.12-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.11.5/util-relation_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/completion_2.12/1.11.5/completion_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/task-system_2.12/1.11.5/task-system_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.11.5/tasks_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.11.5/testing_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-tracking_2.12/1.11.5/util-tracking_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-core_2.12/0.10.1/sjson-new-core_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-scalajson_2.12/0.10.1/sjson-new-scalajson_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-apache-http_2.12/0.9.3/gigahorse-apache-http_2.12-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.27.1/jline-terminal-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classpath_2.12/1.10.8/zinc-classpath_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-apiinfo_2.12/1.10.8/zinc-apiinfo_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.10.8/zinc_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/core-macros_2.12/1.11.5/core-macros_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-cache_2.12/1.11.5/util-cache_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-control_2.12/1.11.5/util-control_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.11.5/protocol_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-position_2.12/1.11.5/util-position_2.12-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile-core_2.12/1.10.8/zinc-compile-core_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.11.5/util-interface-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/jline/jline/2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18/jline-2.14.7-sbt-9a88bc413e2b34a4580c001c654d1a7f4f65bf18-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jni/3.27.1/jline-terminal-jni-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-native/3.27.1/jline-native-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lmax/disruptor/3.4.2/disruptor-3.4.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.20/scala-reflect-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.4.0/error_prone_annotations-2.4.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.13.0/scala-collection-compat_2.12-2.13.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.20/scala-compiler-2.12.20-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/mwiede/jsch/0.2.23/jsch-0.2.23-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41/ivy-2.3.0-sbt-77cc781d727b367d3761f097d89f5a4762771d41-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.27.1/jline-reader-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-builtins/3.27.1/jline-builtins-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.11.5/test-agent-1.11.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-scalajson_2.12/1.0.0-M4/shaded-scalajson_2.12-1.0.0-M4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-jawn-parser_2.12/1.3.2/shaded-jawn-parser_2.12-1.3.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/gigahorse-core_2.12/0.9.3/gigahorse-core_2.12-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/shaded-apache-httpclient5/0.9.3/shaded-apache-httpclient5-0.9.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.12/1.10.8/compiler-bridge_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-classfile_2.12/1.10.8/zinc-classfile_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-core_2.12/1.10.8/zinc-core_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.10.8/zinc-persist_2.12-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.10.1/sjson-new-murmurhash_2.12-0.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/ipcsocket/ipcsocket/1.6.3/ipcsocket-1.6.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.2/scala-parser-combinators_2.12-1.1.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/openhft/zero-allocation-hashing/0.16/zero-allocation-hashing-0.16-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-style/3.27.1/jline-style-3.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.6.1/ssl-config-core_2.12-0.6.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist-core-assembly/1.10.8/zinc-persist-core-assembly-1.10.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/sbinary_2.12/0.5.1/sbinary_2.12-0.5.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.0/jna-5.12.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/5.12.0/jna-platform-5.12.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-plugin_2.12_1.0/3.0.9/sbt-plugin_2.12_1.0-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/sbt-giter8-scaffold_2.12_1.0/0.18.0/sbt-giter8-scaffold_2.12_1.0-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.12/sbt_1.0/0.9.1/srcs/sbt-revolver-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/sbt-routes-compiler_2.12/3.0.9/sbt-routes-compiler_2.12-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-run-support_2.12/3.0.9/play-run-support_2.12-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.5/config-1.4.5-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-simple/2.0.17/slf4j-simple-2.0.17-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-file-watch_2.12/2.0.1/play-file-watch_2.12-2.0.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/sbt-twirl_2.12_1.0/2.0.9/sbt-twirl_2.12_1.0-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-native-packager_2.12_1.0/1.11.3/sbt-native-packager_2.12_1.0-1.11.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-web_2.12_1.0/1.5.8/sbt-web_2.12_1.0-1.5.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/sbt/sbt-js-engine_2.12_1.0/1.3.9/sbt-js-engine_2.12_1.0-1.3.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-lib_2.12/0.18.0/giter8-lib_2.12-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-api_2.12/2.0.9/twirl-api_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-build-link/3.0.9/play-build-link-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/methvin/directory-watcher/0.19.0/directory-watcher-0.19.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/pathikrit/better-files_2.12/3.9.2/better-files_2.12-3.9.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-compiler_2.12/2.0.9/twirl-compiler_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-compress/1.27.1/commons-compress-1.27.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant/1.10.15/ant-1.10.15-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/eldis/tool-launcher/0.2.2/tool-launcher-0.2.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/webjars/webjars-locator-core/0.59/webjars-locator-core-0.59-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/spray/spray-json_2.12/1.3.6/spray-json_2.12-1.3.6-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-core/0.9.4/trireme-core-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-node10src/0.9.4/trireme-node10src-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/foundweekends/giter8/giter8-cli-git_2.12/0.18.0/giter8-cli-git_2.12-0.18.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/ST4/4.3.4/ST4-4.3.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.3.202401111512-r/org.eclipse.jgit-5.13.3.202401111512-r-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.20.0/commons-io-2.20.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.1/plexus-archiver-4.10.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/play-exceptions/3.0.9/play-exceptions-3.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.16.0/jna-5.16.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/playframework/twirl/twirl-parser_2.12/2.0.9/twirl-parser_2.12-2.0.9-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.13.8/parsers_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.17.1/commons-codec-1.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.10.15/ant-launcher-1.10.15-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/github/classgraph/classgraph/4.8.173/classgraph-4.8.173-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/apigee/trireme/trireme-kernel/0.9.4/trireme-kernel-0.9.4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/mozilla/rhino/1.7.10/rhino-1.7.10-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/4.1.0/scopt_2.12-4.1.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit.ssh.apache/5.13.3.202401111512-r/org.eclipse.jgit.ssh.apache-5.13.3.202401111512-r-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.13/JavaEWAH-1.1.13-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/3.5.1/plexus-io-3.5.1-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/io/airlift/aircompressor/0.27/aircompressor-0.27-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/luben/zstd-jni/1.5.7-4/zstd-jni-1.5.7-4-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.12/4.13.8/trees_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/sshd/sshd-osgi/2.7.0/sshd-osgi-2.7.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/net/i2p/crypto/eddsa/0.3.0/eddsa-0.3.0-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.12/4.13.8/common_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.12/4.13.8/io_2.12-4.13.8-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30-sources.jar[0m
+2025.11.22 10:34:12 WARN  unexpected dependency with absolute path: /root/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.4.2/sourcecode_2.12-0.4.2-sources.jar[0m
+2025.11.22 10:34:12 INFO  time: indexed workspace in 29s[0m
+2025.11.22 10:34:13 INFO  Deduplicating compilation of root from bsp client 'Metals 1.6.3' (since 30.943s)[0m
+2025.11.22 10:34:13 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:34:13 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:34:21 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.22 10:34:21 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.22 10:34:21 INFO  time: compiled root in 8.54s[0m
+2025.11.22 10:48:26 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DiscoveryFailures$NoRunOptionException$.<clinit>(DiscoveryFailures.scala:66)
+	at scala.meta.internal.metals.debug.DebugDiscovery.$anonfun$runOrTestFile$2(DebugDiscovery.scala:527)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugDiscovery.runOrTestFile(DebugDiscovery.scala:512)
+	at scala.meta.internal.metals.debug.DebugDiscovery.$anonfun$debugDiscovery$1(DebugDiscovery.scala:170)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:48:26 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DiscoveryFailures$NoRunOptionException$.<clinit>(DiscoveryFailures.scala:66)
+	at scala.meta.internal.metals.debug.DebugDiscovery.$anonfun$runOrTestFile$2(DebugDiscovery.scala:527)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugDiscovery.runOrTestFile(DebugDiscovery.scala:512)
+	at scala.meta.internal.metals.debug.DebugDiscovery.$anonfun$debugDiscovery$1(DebugDiscovery.scala:170)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+[0m
+2025.11.22 10:50:22 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:50:22 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.22 10:50:22 INFO  time: compiled root in 0.89s[0m
+2025.11.22 10:50:42 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:50:42 INFO  time: compiled root in 0.41s[0m
+2025.11.22 10:51:23 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:51:23 INFO  time: compiled root in 0.64s[0m
+2025.11.22 10:53:11 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:53:14 INFO  time: compiled root in 2.41s[0m
+2025.11.22 10:53:50 INFO  compiling root (1 scala source)[0m
+2025.11.22 10:53:52 WARN  Invalid text document uri received from build server: file:///home/kasukabe/schedule_kokubunji/backend/src/main/scala/helper/AuthHelper.scala[0m
+2025.11.22 10:53:52 INFO  time: compiled root in 2.33s[0m
