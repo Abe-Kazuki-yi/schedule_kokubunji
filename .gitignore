@@ -3,3 +3,10 @@ docker/db/data/
 backend/target/
 backend/project/target/
 backend/project/project/
+
+.metals/
+.bloop/
+.vscode/
+target/
+*.class
+*.semanticdb
