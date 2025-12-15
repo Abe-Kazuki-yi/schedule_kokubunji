@@ -1,3 +1,0 @@
-# --- 認証API ---
-POST    /auth/register      controller.AuthController.register
-POST    /auth/signin      controller.AuthController.signIn
