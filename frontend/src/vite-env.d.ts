@@ -9,6 +9,7 @@
 
 interface ImportMetaEnv {
     readonly VITE_API_BASE_URL: string
+    readonly MODE: string;
     // 他の環境変数を作った場合、ここに追加
 }
   

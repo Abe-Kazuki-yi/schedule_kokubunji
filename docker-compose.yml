@@ -13,6 +13,7 @@ services:
       - DB_URL=jdbc:postgresql://db:5432/mydb
       - DB_USER=postgres
       - DB_PASSWORD=postgres
+      - ./backend/logs:/app/logs
       #以下の要素はめっちゃ長いランダムな文字列にすること
       - PLAY_HTTP_SECRET_KEY=changeme-very-long-random-value
 
