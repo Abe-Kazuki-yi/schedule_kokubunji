@@ -2,4 +2,8 @@
 POST    /auth/register      controller.AuthController.register
 POST    /auth/signin      controller.AuthController.signIn
 
+# --- ログ記録用API ---
+POST    /api/logs   controller.LogController.frontendLog
+
+# --- テスト用API ---
 GET   /health   controller.HealthController.health

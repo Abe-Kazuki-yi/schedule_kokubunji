@@ -1,36 +1,37 @@
 <configuration>
+  <property name="LOG_DIR" value="logs"/>
 
-  <!-- ログディレクトリ -->
-  <property name="LOG_DIR" value="logs/backend"/>
-
-  <!-- ファイル出力 -->
-  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-
+  <!-- frontend log -->
+  <appender name="FRONTEND_FILE"
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-      <fileNamePattern>${LOG_DIR}/%d{yyyy-MM-dd}.log</fileNamePattern>
+      <fileNamePattern>${LOG_DIR}/frontend/%d{yyyy-MM-dd}.log</fileNamePattern>
       <maxHistory>30</maxHistory>
     </rollingPolicy>
-
     <encoder>
-      <pattern>
-        %d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %-5level [%thread] %logger - %msg%n
-      </pattern>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %-5level %msg%n</pattern>
     </encoder>
   </appender>
 
-  <!-- コンソール出力（docker logs 用） -->
-  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  <!-- backend log -->
+  <appender name="BACKEND_FILE"
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${LOG_DIR}/backend/%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
     <encoder>
-      <pattern>
-        %d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %-5level [%thread] %logger - %msg%n
-      </pattern>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS,Asia/Tokyo} %-5level %logger - %msg%n</pattern>
     </encoder>
   </appender>
 
-  <!-- ルートロガー -->
+  <!-- frontend logger -->
+  <logger name="frontend" level="INFO" additivity="false">
+    <appender-ref ref="FRONTEND_FILE"/>
+  </logger>
+
+  <!-- root = backend -->
   <root level="INFO">
-    <appender-ref ref="STDOUT"/>
-    <appender-ref ref="FILE"/>
+    <appender-ref ref="BACKEND_FILE"/>
   </root>
-
 </configuration>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { loginWithPassword } from "@/lib/auth/authService";
 
 import BeforLoginLayout from "@/layout/BeforeLoginLayout";
+import { logger } from "@/utils/logger";
 /*
  * ===========================================================
  *  ファイル名 : LoginPage.tsx
@@ -25,6 +26,7 @@ export default function LoginPage() {
     try {
       const data = await loginWithPassword(username, password);
       console.log("ログイン成功:", data);
+      logger.trace("ログイン成功:", data.message);
 
       if (data.role === "admin") {
         window.location.href = "/adminHome";
@@ -35,6 +37,7 @@ export default function LoginPage() {
       }
     } catch (err: any) {
       setError(err.message);
+      logger.error("ログイン失敗:", err.message);
     }
   };
 
