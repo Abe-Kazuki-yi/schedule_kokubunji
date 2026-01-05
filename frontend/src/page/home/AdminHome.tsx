@@ -3,9 +3,8 @@ import AdminOnlyMenu from "@/components/admin/AdminOnlyMenu";
 
 export default function AdminHome() {
   return (
-    <MainLayout>
+    <MainLayout sidebar={<AdminOnlyMenu />}>
       <h2>管理者ホーム</h2>
-      <AdminOnlyMenu />
     </MainLayout>
   );
 }

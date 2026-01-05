@@ -8,8 +8,9 @@
  */
 export default function AdminOnlyMenu(){
     return (
-        <div>
-            
-        </div>
+      <div>
+        <p>管理者メニュー1</p>
+        <p>管理者メニュー2</p>
+      </div>
       );
 }
