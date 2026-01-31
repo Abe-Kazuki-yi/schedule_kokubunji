@@ -1,0 +1,11 @@
+.metals/
+.bloop/
+.vscode/
+target/
+*.class
+*.semanticdb
+
+logs/
+backend/logs/
+frontend/logs/
+*.log

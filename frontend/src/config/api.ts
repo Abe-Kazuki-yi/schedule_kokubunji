@@ -9,4 +9,5 @@ export const ENDPOINTS = {
     lesson: "/lesson",
     students: "/students", //テスト用
     auth: "/auth", //ログイン用
+    logs: "/api/logs",
   };
