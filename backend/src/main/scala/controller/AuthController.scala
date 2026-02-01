@@ -1,6 +1,7 @@
 package controller
 import play.api.mvc._
 import play.api.libs.json._
+import play.api.Logging
 import javax.inject._
 import scala.concurrent.{ExecutionContext, Future}
 import service.AuthService
@@ -24,7 +25,8 @@ class AuthController @Inject()(
     authService: AuthService,
     jwtUtil: JwtUtil
 )(implicit ec: ExecutionContext)
-extends AbstractController(cc) {
+extends AbstractController(cc)
+with Logging{
      /**
      * 新規登録のリクエストで使うdtoの定義
      */
@@ -37,6 +39,8 @@ extends AbstractController(cc) {
     case class PasswordLoginRequest(username: String, password: String)
     implicit val passwordLoginRequest : Format[PasswordLoginRequest] = Json.format[PasswordLoginRequest]
 
+    val traceId = org.slf4j.MDC.get("traceId")
+
     /**
      * @brief ユーザの新規登録をするメソッド
      * @param　RegisterRequestと同じJson
@@ -44,10 +48,20 @@ extends AbstractController(cc) {
      * @note 500でのエラーで詳しくメッセージを出す処理を作っていない
      */
     def register = Action.async(parse.json) { request =>
+        logger.info("register request received")
+
          request.body.validate[RegisterRequest].fold(
-        _ => Future.successful(BadRequest("Invalid request")),
+        _ => {
+            logger.warn("register invalid request json")
+            Future.successful(BadRequest("Invalid request"))
+        },
         data => authService.register(data.username, data.password, data.role)
-        .map(_ => Created("User registered")) 
+        .map { _ =>
+            org.slf4j.MDC.put("traceId", traceId)
+            logger.info("register success")
+            Created("User registered")
+        }
+
         )
     }
 
@@ -57,16 +71,25 @@ extends AbstractController(cc) {
      * @return 200:ログイン成功{message, token, role}のjson、400:入力jsonが不適、401:ユーザネームかパスワードが不一致、500:JWTトークンの発行に失敗
      */
     def signIn = Action.async(parse.json) { request =>
+        logger.info("signIn request received")
+        
         request.body.validate[PasswordLoginRequest].fold(
-        _ => Future.successful(BadRequest("Invalid request")),
+        _ => {
+            logger.warn("signIn invalid request json")
+            Future.successful(BadRequest("Invalid request"))
+        },
         data => authService.authenticate(data.username, data.password)
         .map {
             case Some(user: User) =>
+                org.slf4j.MDC.put("traceId", traceId)
+                logger.info(s"signIn success userId=${user.id} role=${user.role}")
+
                 val token : String = jwtUtil.createToken(user.id, user.role)
                 Ok(Json.obj(
-                    "message" -> "Login success",
+                    "userId" -> user.id,                 
                     "token" -> token,
-                    "role" -> user.role
+                    "role" -> user.role,
+                    "message" -> "Login success"
                 ))
                 .withCookies(Cookie("auth_token", token, httpOnly = true))
                 case None =>
@@ -74,8 +97,10 @@ extends AbstractController(cc) {
         }
         .recover {
           case ex: Throwable =>
+            org.slf4j.MDC.put("traceId", traceId)
+            logger.error("signIn unexpected error", ex)
             InternalServerError(Json.obj(
-              "error" -> "userテーブルをデータベースに作ってないよ",
+              "error" -> "internal server error",
               "details" -> ex.getMessage
             ))
         }

@@ -3,6 +3,16 @@ docker/db/data/
 backend/target/
 backend/project/target/
 backend/project/project/
+backend/.bsp/
+backend/.bsp/*
+backend/.metals/
+backend/.metals/*
+
+backend/logs/
+backend/logs/*
+
+.bsp/
+.bsp/*
 
 .metals/
 .bloop/

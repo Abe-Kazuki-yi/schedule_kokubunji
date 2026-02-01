@@ -8,8 +8,9 @@
  */
 export default function TeacherOnlyMenu(){
     return (
-        <div>
-            
-        </div>
+      <div>
+        <p>講師メニュー1</p>
+        <p>講師メニュー2</p>
+      </div>
       );
 }

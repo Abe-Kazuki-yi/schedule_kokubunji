@@ -26,7 +26,11 @@ lazy val root = (project in file("."))
       "org.mindrot" % "jbcrypt" % "0.4",
 
       // JWT認証
-      "com.github.jwt-scala" %% "jwt-play" % "10.0.1"
+      "com.github.jwt-scala" %% "jwt-play" % "10.0.1",
+
+      // ログ関係
+      "org.slf4j" % "slf4j-api" % "2.0.13",
+      "ch.qos.logback" % "logback-classic" % "1.5.6",
     ),
     resolvers ++= Seq(
       "Lightbend Repository" at "https://repo.lightbend.com/lightbend/maven-releases/",

@@ -9,17 +9,35 @@ import CommonSidebar from "@/components/utility/CommonSidebar";
  *  作成日     : 2025-11-22
  * ===========================================================
  */
-export default function MainLayout({ children } : { children: ReactNode }) {
-    return (
-      <div>
-        <CommonHeader />
-        <div style={{ display: "flex" }}>
-          <CommonSidebar />
-  
-          <div style={{ padding: "20px", flex: 1 }}>
-            {children}
-          </div>
-        </div>
+type Props = {
+  sidebar?: ReactNode;
+  children: ReactNode;
+};
+
+export default function MainLayout({ sidebar, children }: Props) {
+  return (
+    <div>
+      <CommonHeader />
+
+      <div style={{ display: "flex", minHeight: "calc(100vh - 60px)" }}>
+        {/* 左サイドバー */}
+        {sidebar && (
+          <aside
+            style={{
+              width: "200px",
+              background: "#f0f0f0",
+              borderRight: "1px solid #ddd",
+            }}
+          >
+            {sidebar}
+          </aside>
+        )}
+
+        {/* メインコンテンツ */}
+        <main style={{ flex: 1, padding: "20px" }}>
+          {children}
+        </main>
       </div>
-    );
-  }
+    </div>
+  );
+}
